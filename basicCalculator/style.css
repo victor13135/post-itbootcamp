@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#container {
+    background-color: gray;
+    text-align: center;
+}
+#display {
+    height: 60px;
+    background-color:lightgray;
+    font-size: 200%;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+}
+#keypad {
+    margin: auto;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+#keypad td {
+    text-align: center;
+    vertical-align: middle;
+    background-color: whitesmoke;
+    font-style: bold;
+    font-family: monospace;
+    border: 5px solid gray;
+    border-radius: 15px;
+    font-size: 300%;
+}
+#keypad tr td:hover {
+    cursor: pointer;
+    background-color:lightgrey;
+}
+#keypad tr td:active {
+    cursor: pointer;
+    background-color: lightsalmon;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: gray;
+    }
+    #container {
+        padding: 25px;
+        padding-bottom: 40px;
+    }
+    #display {
+        border-radius: 10px;
+        margin: 20px 0;
+        width: 85%;
+    }
+    #keypad {
+        width: 85%;    
+    }
+    #keypad td {
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    #container {
+        border-radius: 20px;
+        margin: 20px auto;
+        width: 250px;
+        height: 330px;
+    }
+    #display {
+        width: 210px;
+        margin: 20px;
+        height: 60px;
+        box-shadow: none;
+    }
+    #keypad {
+        width: 210px;
+    }
+    #keypad td {
+        width: 20px;
+        height: 45px;
+    }   
+}
